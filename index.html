@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Education</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
 </head>
 
 <body>
-    <nav class="navbar background">
+    <nav class="nav background h-nav-res">
 
-        <ul class="leftNav">
+        <ul class="leftNav v-class-res">
             <div class="logo"><img src="imj/education.jpg" alt="Logo"></div>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -19,14 +22,20 @@
             <li><a href="#contact">Contact Us</a></li>
         </ul>
 
-        <div class="rightNav">
+        <div class="rightNav v-class-res">
             <input type="text" name="search" id="search">
             <button class="btn btn-sm">search</button>
         </div>
 
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
     </nav>
 
-    <section class="background firstSection">
+    <section class="background firstSection" id="home">
         <div class="boxMain">
             <div class="firstHalf">
                 <p class="textBig">The Future of Education is here :</p>
@@ -44,7 +53,7 @@
         </div>
     </section>
 
-    <div class="bg">
+    <div class="bg" id="about">
 
     <section class="section">
         <div class="paras">
@@ -61,6 +70,8 @@
         </div>
 
     </section>
+    <br>
+    <br>
 
     <section class="section left">
         <div class="paras">
@@ -78,6 +89,9 @@
 
     </section>
 
+    <br>
+    <br>
+    
     <section class="section">
         <div class="paras">
             <p class="sectionTag textBig">Let's Grow Together :</p>
@@ -99,7 +113,7 @@
 </div>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
 
         <h1 class="textB">Contact Us</h1>
 
@@ -120,6 +134,7 @@
         </p>
     </footer>
 
+    <script src="javascript/respons.js"></script>
 
 </body>
 
